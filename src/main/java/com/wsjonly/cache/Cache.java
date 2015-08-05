@@ -3,12 +3,6 @@ package com.wsjonly.cache;
 
 import java.util.Map;
 
-/**
- * 提供给上层应用使用的缓存接口
- * User: shunlongli
- * Date: 2010-3-18
- * Time: 15:36:12
- */
 public interface Cache {
     public static final String CACHE_NAME_OBJECT = "CMS_OBJ";
     public static final String CACHE_NAME_LIST = "CMS_LIST";
