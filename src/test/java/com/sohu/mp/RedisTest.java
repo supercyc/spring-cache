@@ -2,8 +2,8 @@ package com.sohu.mp;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.sohu.mp.datacache.DataCache;
-import com.sohu.mp.datacache.DataCacheManager;
+import com.wsjonly.datacache.DataCache;
+import com.wsjonly.datacache.DataCacheManager;
 
 public class RedisTest {
 	public static void main(String[] args) {

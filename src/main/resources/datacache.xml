@@ -15,7 +15,7 @@
         </properties>
     </client>
 
-    <cache name="MP_ACCOUNTS" cacheTimeSeconds="0" keyGeneratorClass="com.sohu.mp.cache.impl.DefaultKeyGenerator"/>
-    <cache name="ACCOUNTS_SYNC" cacheTimeSeconds="0" keyGeneratorClass="com.sohu.mp.cache.impl.DefaultKeyGenerator"/>
+    <cache name="MP_ACCOUNTS" cacheTimeSeconds="0" keyGeneratorClass="com.wsjonly.cache.impl.DefaultKeyGenerator"/>
+    <cache name="ACCOUNTS_SYNC" cacheTimeSeconds="0" keyGeneratorClass="com.wsjonly.cache.impl.DefaultKeyGenerator"/>
     
 </CacheConfigs>
