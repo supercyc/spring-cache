@@ -43,7 +43,6 @@ public class RedisCacheClientFactory implements CacheClientFactory {
 	
 	private static JedisPool pool = null;
 	
-	@Override
 	public CacheClient createCacheClient(Map<String, String> properties) {
 		
 		RedisCacheClient cacheClient = null;

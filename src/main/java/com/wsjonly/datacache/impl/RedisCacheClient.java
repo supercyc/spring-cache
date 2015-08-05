@@ -31,7 +31,6 @@ public class RedisCacheClient implements CacheClient {
         this.pool = pool;
     }
     
-    @Override
     public Object get(String key) {
         log.debug("Jedis.get({})",key);
         Object value = null;
@@ -51,7 +50,6 @@ public class RedisCacheClient implements CacheClient {
         return value;
     }
     
-    @Override
     public void set(String key, int cacheTimeSeconds, Object o) {
         log.debug("Jedis.set({})", key);
         Jedis jedis = pool.getResource();
@@ -90,7 +88,6 @@ public class RedisCacheClient implements CacheClient {
         return value;
     }
 
-    @Override
     public Map<String, Object> getMulti(String... keys) {
         // TODO Auto-generated method stub
         return null;
@@ -138,7 +135,6 @@ public class RedisCacheClient implements CacheClient {
         return keys;
     }
 
-    @Override
     public boolean delete(String key) {
         log.debug("Jedis.delete({})",key);
         Jedis jedis = pool.getResource();
@@ -159,12 +155,10 @@ public class RedisCacheClient implements CacheClient {
         return (ret==0)?false:true;
     }
 
-    @Override
     public void incr(String key, int factor, int startingValue) {
         // TODO Auto-generated method stub
     }
 
-    @Override
     public void shutdown() {
         log.debug("Destroy JedisPool...");
         pool.destroy();

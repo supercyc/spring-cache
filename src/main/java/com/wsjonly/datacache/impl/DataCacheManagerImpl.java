@@ -63,7 +63,6 @@ public class DataCacheManagerImpl implements DataCacheManager {
     /**
      * 获取指定名称的缓存
      */
-	@Override
 	public DataCache getDataCache(String cacheName) {
 		return this.caches.get(cacheName);
 	}
@@ -71,7 +70,6 @@ public class DataCacheManagerImpl implements DataCacheManager {
 	/**
 	 * 关闭指定名称的缓存
 	 */
-	@Override
 	public void closeDataCache(String cacheName) {
 		this.caches.remove(cacheName);
 	}
@@ -79,7 +77,6 @@ public class DataCacheManagerImpl implements DataCacheManager {
 	/**
 	 * 重新配置缓存
 	 */
-	@Override
 	public void reload() {
 		this.cacheClient.shutdown();
 		this.configure(configFile);
@@ -101,7 +98,6 @@ public class DataCacheManagerImpl implements DataCacheManager {
 		this.configFile = configFile;
 	}
 
-	@Override
 	public DataCache getMpAccountsCache() {
 		// TODO Auto-generated method stub
 		return this.getDataCache(DataCache.CACHE_MP_ACCOUNTS);
